@@ -17,10 +17,10 @@ function init(player, OPPONENT){
 
     // load X & O images
     const xImage = new Image();
-    xImage.src = "img/X.png";
+    xImage.src = "X.png";
 
     const oImage = new Image();
-    oImage.src = "img/O.png";
+    oImage.src = "O.png";
 
     // Win combinations
     const COMBOS = [
@@ -247,7 +247,7 @@ function init(player, OPPONENT){
     // SHOW GAME OVER
     function showGameOver(player){
         let message = player === "tie" ? "Уппс!Виграла дружба" : "Виграв";
-        let imgSrc = `img/${player}.png`;
+        let imgSrc = `${player}.png`;
 
         gameOverElement.innerHTML = `
             <h1>${message}</1>
